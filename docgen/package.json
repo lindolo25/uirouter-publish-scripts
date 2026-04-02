@@ -1,7 +1,8 @@
 {
   "dependencies": {
-    "typedoc": "0.17.8",
-    "typescript": "3.9.7",
-    "typedoc-plugin-ui-router": "4.0.1"
+    "typedoc": "0.28.16",
+    "typescript": "5.9.3",
+    "typedoc-plugin-ui-router": "github:lindolo25/typedoc-plugin-ui-router#master",
+    "typedoc-default-themes": "0.12.10"
   }
 }

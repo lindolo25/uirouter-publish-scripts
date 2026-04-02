@@ -39,7 +39,7 @@ const CLONE_COMMANDS = ['#!/usr/bin/env bash', 'set -x'];
     .find((x) => !!x);
 
   const version = branch || findSemverPackage(pkg, semver);
-  CLONE_COMMANDS.push(`./clone.sh ${repo} ${PACKAGE_DIR}/src/includes/${pkg} ${version}`);
+  CLONE_COMMANDS.push(`./clone.sh ${repo} ${PACKAGE_DIR}/includes/${pkg} ${version}`);
 });
 
 fs.writeFileSync('clone_repos.sh', CLONE_COMMANDS.join('\n'));
